@@ -1,0 +1,111 @@
+.pageTitle {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.grid {
+  margin-top: 2rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  max-width: 1000px;
+}
+
+.action {
+  text-align: left;
+  color: dodgerblue;
+}
+
+.note {
+  height: 200px;
+  width: 200px;
+  padding: 0.2rem 1rem;
+  margin: 0.5rem;
+  background: #ffff00;
+  box-shadow: 4px 4px 8px 1px #00000075;
+  border-radius: 2px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  padding: 0 2rem;
+}
+
+.pageTitle {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 3rem;
+}
+
+.title {
+  padding: 0.1rem;
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.content {
+  font-size: 0.9rem;
+  font-weight: normal;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.created {
+  font-size: 0.7rem;
+  font-weight: lighter;
+}
+
+.action {
+  text-align: left;
+  color: dodgerblue;
+}
+
+.createNoteForm {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 200px;
+  height: 200px;
+  background: #ffff00;
+  box-shadow: 4px 4px 8px 1px #00000075;
+  border-radius: 2px;
+  padding: 0.2rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.createNoteForm input,
+.createNoteForm textarea {
+  border: none;
+  background: transparent;
+  resize: none;
+  font-family: inherit;
+}
+
+.createNoteForm input {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.createNoteForm textarea {
+  flex-grow: 1;
+  font-size: 0.9rem;
+}
+
+.createNoteForm button {
+  background: transparent;
+  border: none;
+  color: #0000ff;
+  cursor: pointer;
+  font-size: 0.8rem;
+  text-align: right;
+  padding: 0;
+  margin-top: 0.5rem;
+}

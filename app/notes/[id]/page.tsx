@@ -11,7 +11,7 @@ async function getNote(noteId: string) {
 
   const { data: note, error } = await supabase
     .from('notes')
-    .select('*')
+    .select('id, title, content, created_at')
     .eq('id', noteId)
     .single()
 
@@ -47,7 +47,7 @@ export default async function NotePage({ params }: { params: { id: string } }) {
         <h5>{note.content}</h5>
         <p>{new Date(note.created_at).toLocaleString()}</p>
       </div>
-      {/* <p>Last updated: {new Date().toLocaleString()}</p> */}
+      <p>Last updated: {new Date().toLocaleString()}</p>
     </div>
   )
 }

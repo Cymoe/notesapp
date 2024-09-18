@@ -4,7 +4,6 @@ import Link from 'next/link';
 import styles from './Notes.module.css';
 import CreateNote from './CreateNote';
 
-
 async function getNotes() {
   const cookieStore = cookies()
   const supabase = createClient(cookieStore)
@@ -31,9 +30,9 @@ export default async function NotesPage() {
     <div>
       <h1>Notes</h1>
       <div className={styles.grid}>
-        {notes?.map((note) => {
-          return <Note key={note.id} note={note} />;
-        })}
+        {notes?.map((note) => (
+          <Note key={note.id} note={note} />
+        ))}
       </div>
       <CreateNote />
     </div>
